@@ -103,7 +103,7 @@ let prato3 =parseFloat(prompt(`escolha seu segundo prato de 1 a 5:
             break
       }
 
- if (cadastro === "sim" && preço + preço2 + preço3 >= 50) {
+ if (estudante === "sim" && preço + preço2 + preço3 >= 50) {
     alert(`agradeço a preferencia! ${nome}
         Pratos escolhidos: 
         ${Compra} de ${preço}
@@ -145,6 +145,7 @@ let prato3 =parseFloat(prompt(`escolha seu segundo prato de 1 a 5:
         }    
     }
  }
+
 
 
 
