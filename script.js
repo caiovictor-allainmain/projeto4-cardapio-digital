@@ -9,7 +9,7 @@ Escolha o primeiro prato com os números entre 1 e 4:
   5: { sair }
 `))
 
- if (prato===5){
+ if ( prato==5 ){
     alert("agradeço a preferencia, volte sempre.")
  } else{ 
     switch (prato) {
@@ -44,7 +44,7 @@ let prato2 =parseFloat(prompt(`escolha seu segundo prato de 1 a 4:
   4: { nome: "Batata Frita" preco: 12 }
   5: { sair } 
   `))
-  if (prato2===5){
+  if (prato2==5){
     ("agradeço a preferencia, volte sempre.")
   } else {
     switch (prato2) {
@@ -77,7 +77,7 @@ let prato3 =parseFloat(prompt(`escolha seu segundo prato de 1 a 5:
   4: { nome: "Batata Frita" preco: 12 }
   5: { sair } 
   `))
-  if (prato3===5) {
+  if (prato3==5) {
     ("agradeço a preferencia, volte sempre.")
   } else {
     switch (prato2) { 
@@ -103,7 +103,7 @@ let prato3 =parseFloat(prompt(`escolha seu segundo prato de 1 a 5:
             break
       }
 
- if (estudante === "s" && preço + preço2 + preço3 > 50) {
+ if (cadastro === "sim" && preço + preço2 + preço3 >= 50) {
     alert(`agradeço a preferencia! ${nome}
         Pratos escolhidos: 
         ${Compra} de ${preço}
@@ -111,10 +111,10 @@ let prato3 =parseFloat(prompt(`escolha seu segundo prato de 1 a 5:
         ${Compra3} de ${preço3}
         Total sem desconto: R$ ${preço + preço2 + preço3}
         
-        Total com desconto: R$ ${preço + preço2 + preço3 - ((preço + preço2 + preço3) * 0.15)}`)
+        Total com desconto: R$ ${preço + preço2 + preço3 -  (((preço + preço2 + preço3) * 0.10) + ((preço + preço2 + preço3) * 0.05 ))}`)
  
  
-    }else if (estudante === "n" && preço + preço2 + preço3 > 50) {
+    }else if (estudante === "n" && preço + preço2 + preço3 >= 50) {
         alert(`Obrigado ${nome}!
         Pratos escolhidos: 
         ${Compra} de ${preço}
@@ -122,7 +122,17 @@ let prato3 =parseFloat(prompt(`escolha seu segundo prato de 1 a 5:
         ${Compra3} de ${preço}
         Total sem desconto: R$ ${preço + preço2 + preço3}
         Total com desconto: R$ ${preço + preço2 + preço3 - ((preço + preço2 + preço3) * 0.05)}`)
-            
+       else if (cadastro  === "sim" && preço1 + preço2 + preço3 <= 50) 
+        
+          {
+        alert(`Obrigado ${nome}
+        Pratos escolhidos: 
+        ${Compra} de ${preço}
+        ${Compra2} de ${preço2} 
+        ${Compra3} de ${preço3}
+        Total sem desconto: R$ ${preço + preço2 + preço3}
+        Total com desconto: R$ ${preço + preço2 + preço3 - ((preço1 + preço2 + preço3) * 0.10)}`)
+        }       
     
     } else {alert(`Obrigado ${nome}!
             Pratos escolhidos: 
@@ -135,3 +145,4 @@ let prato3 =parseFloat(prompt(`escolha seu segundo prato de 1 a 5:
         }    
     }
  }
+
