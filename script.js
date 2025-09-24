@@ -122,7 +122,7 @@ let prato3 =parseFloat(prompt(`escolha seu segundo prato de 1 a 5:
         ${Compra3} de ${preço}
         Total sem desconto: R$ ${preço + preço2 + preço3}
         Total com desconto: R$ ${preço + preço2 + preço3 - ((preço + preço2 + preço3) * 0.05)}`)
-       else if (cadastro  === "sim" && preço1 + preço2 + preço3 <= 50) 
+       else if (estudante  === "sim" && preço1 + preço2 + preço3 <= 50) 
         
           {
         alert(`Obrigado ${nome}
@@ -145,4 +145,5 @@ let prato3 =parseFloat(prompt(`escolha seu segundo prato de 1 a 5:
         }    
     }
  }
+
 
