@@ -140,11 +140,12 @@ let prato3 =parseFloat(prompt(`escolha seu segundo prato de 1 a 5:
             ${Compra2} de ${preço2} 
             ${Compra3} de ${preço3}
             Total sem desconto: R$ ${preço + preço2 + preço3} 
-            Total com desonto: você não possui nenhum desconto.`)
+            Total com desconto: você não possui nenhum desconto.`)
          }   
         }    
     }
  }
+
 
 
 
